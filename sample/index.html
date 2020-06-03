@@ -36,7 +36,9 @@
 	<div class="dd">
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide slide1"></div>
+				<div class="swiper-slide slide1">
+
+        </div>
 				<div class="swiper-slide slide2"></div>
 				<div class="swiper-slide slide3"></div>
 			</div>
@@ -44,7 +46,7 @@
 		</div>
     <div class="menu_box">
 		<div class="logo"><img src="images/logo.png" alt=""><a href="#section01"></a></div>
-		<div class="logo2"><img src="images/logo3.png" alt=""><a href="#section01"></a></div>
+		<div class="logo2"><img sr c="images/logo3.png" alt=""><a href="#section01"></a></div>
 		<div class="menubar">
 			<a href="#"></a><img src="/images/btnbtn.png" alt="">
 		</div>
@@ -103,8 +105,61 @@
 </div> -->
 
 
+
+
+
+<div class="tab">
+  <ul class="tab-btn">
+      <li id="tab-btn1"><a class="">책과 영화의 도시</a></li>
+      <li id="tab-btn2"><a class="">건축의 도시</a></li>
+      <li id="tab-btn3"><a class="">교육의 도시</a></li>
+  </ul>
 </div>
-<!-- section02 -->
+
+<div class="content">
+  <div class="tab-content1">
+    <div class="sec03_img">
+      <img src="images/2page-bg1.jpg" alt="">
+
+    </div>
+    
+    <div class="sec03_txt">
+      <h1></h1>
+      <p>2. 우리 회사는...</p>
+      <p>3. 돈이 없다...</p>
+    </div>
+  </div>
+  
+  <div class="tab-content2">
+    <div class="sec03_img">
+      <img src="images/2page-bg2.jpg" alt="">
+  </div>
+
+  <div class="sec03_txt">
+    <p>1. 우리 회사 소개</p>
+    <p>2. 우리 회사는...</p>
+    <p>3. 돈이 없다...</p>
+  </div>
+
+  <div class="tab-content3">
+    <div class="sec03_img">
+      <img src="images/2page-bg3.jpg" alt="">
+  </div>
+
+  <div class="sec03_txt">
+    <p>1. 우리 회사 소개</p>
+    <p>2. 우리 회사는...</p>
+    <p>3. 돈이 없다...</p>
+  </div>
+
+</div>
+
+
+</div>
+<!-- section02 end -->
+
+
+
 <div id="section03">
 
   <section id="lower" data-animation-container>
@@ -220,6 +275,11 @@ padding: 0.6%;
 
 
 
+
+
+
+
+
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3a395b4acea70509d5a4e81c4152c673
 "></script>
 <script>
@@ -269,6 +329,43 @@ var customOverlay = new kakao.maps.CustomOverlay({
 
 </div>
 <!-- section05 -->
+
+
+
+
+
+<!-- script -->
+
+
+<!-- section2 -->
+<script type="text/javascript">
+
+  $(function(){
+    $("#tab-btn1").click(function(){
+        $(".tab-content1").css("display","block");
+        $(".tab-content2").css("display","none");
+        $(".tab-content3").css("display","none");
+    });
+  
+    $("#tab-btn2").click(function(){
+        $(".tab-content1").css("display","none");
+        $(".tab-content2").css("display","block");
+        $(".tab-content3").css("display","none");
+    });
+    $("#tab-btn3").click(function(){
+        $(".tab-content1").css("display","none");
+        $(".tab-content2").css("display","none");
+        $(".tab-content3").css("display","block");
+    });
+  });
+  
+  </script>
+  <!-- section2 end -->
+  
+
+
+
+
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script> 
 

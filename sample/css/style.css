@@ -84,6 +84,69 @@
 
 
 
+
+
+.tab-btn a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.tab-btn li{
+	color: inherit;
+	list-style: none;
+	text-decoration: none;
+}
+
+.tab-btn{
+    display: flex;
+    margin: 30px;
+}
+
+.tab-btn>li{
+    margin: 10px;
+}
+
+.tab-content1{
+	margin:0 auto;
+    width: 90%;
+    border: 1px solid teal;
+    background: silver;
+}
+
+.tab-content2{
+    width: 300px;
+    border: 1px solid rosybrown;
+    background: seashell; 
+    display: none;
+}
+
+.tab-content3{
+    width: 300px;
+    border: 1px solid rosybrown;
+    background: #242424;
+    display: none;
+}
+
+
+
+.tab-content1{
+	display:flex;
+	flex-direction: row;
+}
+.sec03_img{
+	width: 50%;
+
+}
+.sec03_img img{
+	width: 100%;
+
+}
+.sec03_txt{
+	width: 50%;
+
+}
+
+
 /* section2 end */
 	
 #section03 {
@@ -287,26 +350,26 @@
 }
     
 	
-	.fixed {
+.fixed {
 		background: rgba(246,247,248,0.8); 
 		transition:all 0.5s ease-in-out; 
 		-webkit-transition:all 0.5s ease-in-out;
 		z-index: 99999;
-	}
+}
 
-		.logo {
-			margin-left: 160px;
-			margin-top: 30px;
-			margin-right: 375.18px;
-			/* margin-left: 375.18px;
-			margin-top: 52.88px; */
-		}
+.logo {
+	margin-left: 160px;
+	margin-top: 30px;
+	margin-right: 375.18px;
+	/* margin-left: 375.18px;
+	margin-top: 52.88px; */
+}
 
-		.logo2{
-			display: none;
-			margin-left: 39%;
-			margin-top: 3%;
-		}
+.logo2{
+	display: none;
+	margin-left: 39%;
+	margin-top: 3%;
+}
 	
 		/* .logo a{
 			font-size:46px; 
@@ -316,34 +379,34 @@
 			background-image: url(/images/logo.png); 
 			font-family: 'Open Sans',Arial,Helvetica,sans-serif; text-decoration:none;} */
 
-			.menu-bar {
-				display: none;
-				padding: 4px 12px;
-				font-size: 20px;
-				color: #245751;
-				border: 1px solid #245751;
-				border-radius: 3px;
-				cursor: pointer;
-			}
+.menu-bar {
+	display: none;
+	padding: 4px 12px;
+	font-size: 20px;
+	color: #245751;
+	border: 1px solid #245751;
+	border-radius: 3px;
+	cursor: pointer;
+	}
 			
-		.menu_box ul {
-			display: flex;
-			justify-content: flex-end;
-			padding:0 35px 0 200px;
-		    }
+.menu_box ul {
+	display: flex;
+	justify-content: flex-end;
+	padding:0 35px 0 200px;
+ }
 			
-			.menu_box li {
-				display: flex; 
-				text-align:center; 
-				width:100px; 
-				padding: 18px 20px;
-			    }
+.menu_box li {
+	display: flex; 
+	text-align:center; 
+	width:100px; 
+	padding: 18px 20px;
+}
 				
-				.menu_box li a {
-					text-decoration:none; color:#245751; line-height:100px; 
-					font-family: 'Noto Sans KR', sans-serif;
-					font-size:18px;
-				}
+.menu_box li a {
+	text-decoration:none; color:#245751; line-height:100px; 
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size:18px;
+}
 
 					
 					/**메뉴부분 마우스 오버시 색상 **/
@@ -453,6 +516,24 @@
 							  .img-flex{
 								display: block;
 								margin-left: 5%;
+							}
+
+
+							/*section02 */
+							.tab-content1{
+								display: flex;
+								flex-direction: column;
+							}
+
+
+							.sec03_img{
+								width: 100%;
+							
+							}
+						
+							.sec03_txt{
+								width: 100%;
+							
 							}
 
 							#section05 {
