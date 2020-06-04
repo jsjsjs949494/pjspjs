@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:image" content=""/> 
+<meta property="og:description" content="책과 복합문화예술의 도시로"/>
+<meta property="og:title" content="파주출판도시"/>
+
+<title>파주출판도시</title>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<!-- 파비콘 -->
+<link rel="shortcut icon" href="images/favicon.png">
+
+
+<link rel="stylesheet" href="css/css.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/reset.css">
+
+<style>
+</style>
+
+</head>
+
+<body>
+<div id="section01">
+    <div class="menu_box">
+        <div class="logo"><a href="#section01"><img src="images/logo.png" alt=""></a></div>
+        <ul>
+            <li><a href="#section01">홈</a></li>
+            <li><a href="#section02">소개</a></li>
+            <li><a href="#section03">지혜의 숲</a></li>
+            <li><a href="#section04">주변 볼거리</a></li>
+            <li><a href="#section05">오시는 길</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="section02">
+
+</div>
+
+<!-- 섹션 2 끝 -->
+
+<div id="section03">
+
+</div>
+
+<!-- 섹션 3 끝 -->
+
+<div id="section04">
+
+</div>
+
+<!-- 섹션 4 끝 -->
+
+<div id="section05">
+
+</div>
+
+<!-- 섹션 5 끝 -->
+
+
+<script>
+	/**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
+	if (jQuery(window).width() > 0) {
+    jQuery(window).on("scroll",function(ev){
+        if(jQuery(window).scrollTop() > 150 ) { /**높이 픽셀 조정**/
+            jQuery('.menu_box').addClass('fixed');  /**위의 높이에서 .fixed 클래스를 추가합니다. 스타일에서 자유롭게 수치 조절 가능합니다.**/
+        }
+        else{
+			jQuery('.menu_box').removeClass('fixed');
+        }
+        return false;
+    });
+	}
+	
+	/**마우스 부드럽게 해당위치로 이동**/
+	$(function(){
+	   $('a[href^=#]').click(function() {
+		  var speed = 800;
+		  var href= $(this).attr("href");
+		  var target = $(href == "#" || href == "" ? 'html' : href);
+		  var position = target.offset().top;
+		  $('body,html').animate({scrollTop:position}, speed, 'swing');
+		  return false;
+	   });
+	});
+</script>
+</body>
+</html>
