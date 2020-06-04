@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
 *{
     list-style:none; 
     margin:0; 
@@ -13,9 +15,9 @@ html, body {
 #section01{
     width:100%; 
     height:1000px; 
-    background:#FFF url(img/home-banner.jpg) top center no-repeat;
+    background:url(../images/mainbg.jpg) top center no-repeat;
 }
-	
+
 #section02{
     width:100%; 
     background:#f6f7f8;
@@ -27,16 +29,19 @@ html, body {
     list-style: none;
     width: 100%;
 }
+
 .tab>li{
     width: 33.33%;
     text-align: center;
     cursor: pointer;
     padding-bottom: 20px;
-
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2.5rem;
+    color: #242424;
 }
+
 .tab1-btn{
     border-bottom: double;
-
 }
 
 
@@ -130,6 +135,15 @@ html, body {
     .tab-content-text {
         padding: 0 !important;
     }
+    .tab>li{
+        width: 33.33%;
+        text-align: center;
+        cursor: pointer;
+        padding-bottom: 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 1.2rem;
+        color: #242424;   
+    }
 }
 
 
@@ -137,7 +151,7 @@ html, body {
 /* section02 */
 
 #section03{
-    background:#9F0;
+    background:#bca487;
 }
 
 .sec03-row{
@@ -154,8 +168,23 @@ html, body {
     align-items: center;
     justify-content: center;
     text-align: center;
-
+    font-family: 'Noto Sans KR', sans-serif;
 }
+
+.sec03-main-txt h1{
+    color: #245751;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 5%;
+}
+
+.sec03-main-txt p{
+    color: #242424;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+
 
 
 .sec03-img{
@@ -230,7 +259,7 @@ html, body {
 	
 #section04{
     width:100%; 
-    background:#F33;
+    background:#Fff;
 }
 
 .sec04-warp{
@@ -267,13 +296,27 @@ html, body {
 
 .slider-img01{
     width: 100%;
-    height: 300px;
+    height: 500px;
     background: url('../images/4page-bg1.jpg');
 }
 
+.slider-img02{
+    width: 100%;
+    height: 500px;
+    background: url('../images/4page-bg2.jpg');
+}
 
+.slider-text{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 800;
+    line-height: 1.5rem;
+}
 
-
+.slider-text h1{
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: #245751;
+}
 
 
 
@@ -281,9 +324,14 @@ html, body {
 	
 #section05{
     width:100%; 
-    height:1500px; 
-    background:#FC0;
+    height: 1000px;
+    background: url(../images/map-bg.jpg);
 }
+
+
+
+
+
 
 .menu_box{
     width:100%; 
@@ -298,6 +346,7 @@ html, body {
         background:rgba(246,247,248,0.7); 
         transition:all 0.5s ease-in-out; 
         -webkit-transition:all 0.5s ease-in-out;
+        z-index: 999999;
     }
 	
 		.logo a{
